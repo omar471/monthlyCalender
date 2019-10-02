@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="src/bootstrap.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/colorPick.css">
+    <link rel="stylesheet" href="src/calender.css">
+    <style>
+        .picker {
+            color: balck;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="  p-3  ">
+        <div class="card" style="">
+            <div class="card-body">
+                <div>
+                    <div class=" text-center p-5 monthname ">
+                        <h2 class="">October</h2>
+                        <p> 2019</p>
+                    </div>
+                </div>
+                <div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class=" text-center">
+                                <th scope="col">Sa</th>
+                                <th scope="col">SU</th>
+                                <th scope="col">MO</th>
+                                <th scope="col">TU</th>
+                                <th scope="col">WE</th>
+                                <th scope="col">TH</th>
+                                <th scope="col">FR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="  text-center ">
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td class="  picker">1 <p> submit report </p>
+                                </td>
+                                <td class="  picker">2<br>make    wordpress   gig </td>
+                                <td class="  picker">3 <p>data com xm <br>data mining xm </td>
+                                <td class="  picker">4</td>
+                            </tr>
+                            <tr class=" text-center">
+                                <th class="  picker">5</th>
+                                <td class="  picker">6</td>
+                                <td class="  picker">7</td>
+                                <td class="  picker">8</td>
+                                <td class="  picker">9 <br>  
+                                </td>
+                                <td class="  picker">10<br>  makeup  class of sunday
+                                </td>
+                                <td class="  picker">11</td>
+                            </tr>
+                            <tr class=" text-center">
+                                <th class="  picker">12<br>
+                                    <!-- Button trigger modal -->
+                                </th>
+                                <td class="  picker">13</td>
+                                <td class="  picker">14</td>
+                                <td class="  picker">15</td>
+                                <td class="  picker">16</td>
+                                <td class="  picker">17</td>
+                                <td class="  picker">18</td>
+                            </tr>
+                            <tr class=" text-center">
+                                <th class=" picker">19</th>
+                                <td class="  picker">20</td>
+                                <td class="  picker">21</td>
+                                <td class="  picker">22</td>
+                                <td class="  picker">23</td>
+                                <td class="  picker">24</td>
+                                <td class="  picker">25</td>
+                            </tr>
+                            <tr class=" text-center">
+                                <th class=" picker">26</th>
+                                <td class="  picker">27</td>
+                                <td class="  picker">28</td>
+                                <td class="  picker">29</td>
+                                <td class="  picker">30</td>
+                                <td class="  picker">31</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="src/colorPick.js"></script>
+       
+        <script>
+        $(".picker").colorPick({
+            'initialColor': 'onColorSelected',
+            'palette': ["#1abc9c", "#16a085", "#2ecc71", "#27ae60", "#3498db", "#2980b9", "#9b59b6", "#8e44ad", "#34495e", "#2c3e50", "#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#ecf0f1"],
+            'onColorSelected': function() {
+                console.log("The user has selected the color: " + this.color)
+                this.element.css({
+                    'backgroundColor': this.color
+                });
+            }
+        });
+    </script>
+    
+    
+<!--    <script>
+        $(".picker").colorPick({
+            'initialColor': '#ffffff',
+            'palette': ["#1abc9c", "#16a085", "#2ecc71", "#27ae60", "#3498db", "#2980b9", "#9b59b6", "#8e44ad", "#34495e", "#2c3e50", "#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#ecf0f1"],
+            'onColorSelected': function() {
+                console.log("The user has selected the color: " + this.color)
+                this.element.css({
+                    'backgroundColor': this.color
+                });
+            }
+        });
+    </script>-->
+</body></html>
